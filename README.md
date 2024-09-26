@@ -7,6 +7,7 @@ This repository contains a collection of simple scripts designed to automate eve
 - [Check ISP](#check-isp)
 - [Set Network IP Manually](#set-network-ip)
 - [Set IP Automatic DHCP](#set-ip-automatic-dhcp)
+- [Set Multiple IP](#set-multiple-ip)
 
 ## Scripts
 
@@ -21,3 +22,7 @@ This Windows batch script performs a traceroute to a specified IP address and an
 ### [Set IP Automatic DHCP](03_set_ip_automatic.bat)
 
  This Batch file script configures network settings on a specified Windows computer by assigning a static IP, subnet mask, and gateway values to a designated Ethernet interface (Ethernet 4 in this example). It sets both primary and secondary DNS server addresses to facilitate network connectivity and address resolution. The script uses netsh commands to alter the IP configuration without needing direct user intervention for each setting after initial execution. Additionally, it outputs a confirmation message upon successful completion of the operations.
+
+### [Set Multiple IP](04_set_multiple_ip.bat)
+
+This batch script configures network settings on a specified network interface (e.g., "Ethernet 4"). It assigns two IP addresses with their corresponding subnet masks and gateways, sets DNS server addresses (primary, secondary, and tertiary), and displays confirmation messages throughout the process. The script is useful for automating network configuration in a Windows environment.
